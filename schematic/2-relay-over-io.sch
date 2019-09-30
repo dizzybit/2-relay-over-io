@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:DizzyBit-1 Relay-cache
+LIBS:2-relay-over-io-cache
 EELAYER 26 0
 EELAYER END
 $Descr A3 16535 11693
@@ -158,17 +158,6 @@ F 3 "" H 12475 10150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H4
-U 1 1 5C8FAF19
-P 13150 10350
-F 0 "H4" H 13250 10396 50  0000 L CNN
-F 1 "MountingHole" H 13250 10305 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 13150 10350 50  0001 C CNN
-F 3 "~" H 13150 10350 50  0001 C CNN
-	1    13150 10350
-	1    0    0    -1  
-$EndComp
-$Comp
 L Mechanical:MountingHole H1
 U 1 1 5C902F86
 P 12200 10350
@@ -303,10 +292,10 @@ F 10 "https://www.digikey.com/product-detail/en/stmicroelectronics/BAT20JFILM/49
 	0    1    1    0   
 $EndComp
 $Comp
-L songle_5v_relay:SONGLE_5V_relay U2
+L songle_5v_relay:SONGLE_5V_relay U1
 U 1 1 5C5C29D5
 P 3725 2350
-F 0 "U2" H 3725 2787 60  0000 C CNN
+F 0 "U1" H 3725 2787 60  0000 C CNN
 F 1 "SONGLE_3V_relay" H 3725 2681 60  0000 C CNN
 F 2 "Songle:SONGLE_5V_Relay" H 3875 2350 60  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Ningbo-Songle-Relay-SRD-03VDC-SL-C-blue_C24585.pdf" H 3875 2350 60  0001 C CNN
@@ -427,17 +416,6 @@ F 6 "https://www.digikey.com/product-detail/en/bourns-inc/CR0603-JW-331ELF/CR060
 	1    1875 3075
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Connector:Screw_Terminal_01x03 J1
-U 1 1 5C5CB654
-P 5075 2350
-F 0 "J1" H 5155 2392 50  0000 L CNN
-F 1 "Screw_Terminal_01x03" H 5155 2301 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 5075 2350 50  0001 C CNN
-F 3 "" H 5075 2350 50  0001 C CNN
-	1    5075 2350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4875 2350 4275 2350
 Wire Wire Line
@@ -502,10 +480,10 @@ F 10 "https://www.digikey.com/product-detail/en/stmicroelectronics/BAT20JFILM/49
 	0    1    1    0   
 $EndComp
 $Comp
-L songle_5v_relay:SONGLE_5V_relay U3
+L songle_5v_relay:SONGLE_5V_relay U2
 U 1 1 5D9507B5
 P 10400 2350
-F 0 "U3" H 10400 2787 60  0000 C CNN
+F 0 "U2" H 10400 2787 60  0000 C CNN
 F 1 "SONGLE_3V_relay" H 10400 2681 60  0000 C CNN
 F 2 "Songle:SONGLE_5V_Relay" H 10550 2350 60  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Ningbo-Songle-Relay-SRD-03VDC-SL-C-blue_C24585.pdf" H 10550 2350 60  0001 C CNN
@@ -626,17 +604,6 @@ F 6 "https://www.digikey.com/product-detail/en/bourns-inc/CR0603-JW-331ELF/CR060
 	1    8550 3075
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Connector:Screw_Terminal_01x03 J2
-U 1 1 5D9507FF
-P 11750 2350
-F 0 "J2" H 11830 2392 50  0000 L CNN
-F 1 "Screw_Terminal_01x03" H 11830 2301 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 11750 2350 50  0001 C CNN
-F 3 "" H 11750 2350 50  0001 C CNN
-	1    11750 2350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	11550 2350 10950 2350
 Wire Wire Line
@@ -733,4 +700,26 @@ Text GLabel 7925 5300 0    50   Input ~ 0
 IO17
 Text GLabel 7925 5400 0    50   Input ~ 0
 IO33
+$Comp
+L Connector_Generic:WJ142R-5.08-3P J1
+U 1 1 5D93C8FC
+P 4975 2150
+F 0 "J1" H 5075 2275 50  0000 C CNN
+F 1 "WJ142R-5.08-3P" H 5075 2184 50  0000 C CNN
+F 2 "TerminalBlock:WJ142R-5.08-3P" H 4975 2150 50  0001 C CNN
+F 3 "" H 4975 2150 50  0001 C CNN
+	1    4975 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:WJ142R-5.08-3P J2
+U 1 1 5D93CB98
+P 11650 2150
+F 0 "J2" H 11750 2275 50  0000 C CNN
+F 1 "WJ142R-5.08-3P" H 11750 2184 50  0000 C CNN
+F 2 "TerminalBlock:WJ142R-5.08-3P" H 11650 2150 50  0001 C CNN
+F 3 "" H 11650 2150 50  0001 C CNN
+	1    11650 2150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
