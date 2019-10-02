@@ -35,16 +35,14 @@ $EndComp
 $Comp
 L power:+3.3V #PWR0101
 U 1 1 5D8B5B52
-P 3350 7000
-F 0 "#PWR0101" H 3350 6850 50  0001 C CNN
-F 1 "+3.3V" H 3365 7173 50  0000 C CNN
-F 2 "" H 3350 7000 50  0001 C CNN
-F 3 "" H 3350 7000 50  0001 C CNN
-	1    3350 7000
+P 5125 6975
+F 0 "#PWR0101" H 5125 6825 50  0001 C CNN
+F 1 "+3.3V" H 5140 7148 50  0000 C CNN
+F 2 "" H 5125 6975 50  0001 C CNN
+F 3 "" H 5125 6975 50  0001 C CNN
+	1    5125 6975
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3350 8000 4050 8000
 $Comp
 L power:GND #PWR0102
 U 1 1 5D8B5B9E
@@ -61,12 +59,12 @@ Wire Wire Line
 $Comp
 L power:+3.3V #PWR0103
 U 1 1 5D8B5BF6
-P 5100 8925
-F 0 "#PWR0103" H 5100 8775 50  0001 C CNN
-F 1 "+3.3V" H 5115 9098 50  0000 C CNN
-F 2 "" H 5100 8925 50  0001 C CNN
-F 3 "" H 5100 8925 50  0001 C CNN
-	1    5100 8925
+P 3350 8875
+F 0 "#PWR0103" H 3350 8725 50  0001 C CNN
+F 1 "+3.3V" H 3365 9048 50  0000 C CNN
+F 2 "" H 3350 8875 50  0001 C CNN
+F 3 "" H 3350 8875 50  0001 C CNN
+	1    3350 8875
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -85,13 +83,7 @@ F 3 "" H 3350 10450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4575 9825 5100 9825
-Wire Wire Line
-	5100 9825 5100 8925
-Wire Wire Line
 	5125 8375 5125 8000
-Wire Wire Line
-	3350 8000 3350 7000
 Text GLabel 4075 9325 0    50   Input ~ 0
 I2C_SDA
 Text GLabel 4575 9125 2    50   Input ~ 0
@@ -110,7 +102,7 @@ Text GLabel 4575 9625 2    50   Input ~ 0
 IO0
 Text GLabel 4075 9225 0    50   Input ~ 0
 IO1
-Text GLabel 4075 9725 0    50   Input ~ 0
+Text GLabel 4575 9725 2    50   Input ~ 0
 IO2
 Text GLabel 4575 9225 2    50   Input ~ 0
 IO3
@@ -136,7 +128,7 @@ Text GLabel 4550 7300 2    50   Input ~ 0
 I36
 Text GLabel 4050 7300 0    50   Input ~ 0
 I39
-Text GLabel 4550 7900 2    50   Input ~ 0
+Text GLabel 4050 8000 0    50   Input ~ 0
 EXT_5V
 Wire Notes Line
 	7250 6375 7250 11175
@@ -227,7 +219,7 @@ Text Notes 675  6550 0    100  ~ 0
 Connectors
 Text GLabel 4550 7800 2    50   Input ~ 0
 VBAT
-Text GLabel 4575 9725 2    50   Input ~ 0
+Text GLabel 4575 9825 2    50   Input ~ 0
 EN
 $Comp
 L undo:DizzyBITLogo U7
@@ -722,4 +714,12 @@ F 3 "" H 11650 2150 50  0001 C CNN
 	1    11650 2150
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4075 9725 3350 9725
+Wire Wire Line
+	3350 9725 3350 8875
+Wire Wire Line
+	5125 6975 5125 7900
+Wire Wire Line
+	5125 7900 4550 7900
 $EndSCHEMATC
