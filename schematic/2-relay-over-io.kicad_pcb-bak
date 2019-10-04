@@ -1606,7 +1606,7 @@
   (module DizzyBit:DizzyBit-SolderJumper-5-5-Open (layer F.Cu) (tedit 5D8E029B) (tstamp 5D94E44A)
     (at 133.985 121.205 180)
     (path /5D9C15BE)
-    (fp_text reference JP2 (at 2.159 10.715 180) (layer F.SilkS)
+    (fp_text reference JP2 (at 2.159 10.842 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value Conn_02x05_Odd_Even (at 0 -2.5 180) (layer F.Fab)
