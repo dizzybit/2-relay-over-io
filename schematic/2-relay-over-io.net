@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source D:\GIT\dizzybit\2-relay-over-io\schematic\2-relay-over-io.sch)
-    (date "02.10.2019 12:18:07")
+    (date "28.10.2019 10:11:05")
     (tool "Eeschema (5.0.2)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -95,7 +95,7 @@
       (tstamp 5C5C267F))
     (comp (ref U1)
       (value SONGLE_3V_relay)
-      (footprint Songle:SONGLE_5V_Relay)
+      (footprint Songle:SONGLE_3V_Relay)
       (datasheet https://datasheet.lcsc.com/szlcsc/Ningbo-Songle-Relay-SRD-03VDC-SL-C-blue_C24585.pdf)
       (fields
         (field (name lcsc_pn) C24585)
@@ -160,7 +160,7 @@
       (tstamp 5D9507AD))
     (comp (ref U2)
       (value SONGLE_3V_relay)
-      (footprint Songle:SONGLE_5V_Relay)
+      (footprint Songle:SONGLE_3V_Relay)
       (datasheet https://datasheet.lcsc.com/szlcsc/Ningbo-Songle-Relay-SRD-03VDC-SL-C-blue_C24585.pdf)
       (fields
         (field (name lcsc_pn) C24585)
